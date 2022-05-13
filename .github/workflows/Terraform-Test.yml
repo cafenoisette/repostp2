@@ -7,7 +7,25 @@ on:
     - test
   pull_request:
  
+#name: terrascan
+#on: [workflow_dispatch]
 jobs:
+  terrascan_job:
+    runs-on: ubuntu-latest
+    name: terrascan-action
+    steps:
+    - name: Checkout repository
+      uses: actions/checkout@v2
+    - name: Run Terrascan
+      id: terrascan
+      uses: accurics/terrascan-action@main
+      with:
+        iac_type: 'terraform'
+        iac_version: 'v14'
+        policy_type: 'azure'
+        only_warn: false
+        sarif_upload: false
+job:
   terraform:
     name: 'Terraform'
     env:
