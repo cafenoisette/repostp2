@@ -21,10 +21,29 @@ variable "location" {
   description = "Location of Azure resources"
   default     = "canadaeast"
 }
+variable "location1" {
+  type        = string
+  description = "Location of Azure resources"
+  default     = "canadaeast"
+}
+variable "location2" {
+  type        = string
+  description = "Location of Azure resources"
+  default     = "canadaeast"
+}
 variable "resource_group_name" {
   type        = string
   description = "Resource Group name to where resources are going to be deployed"
   default     = "tp2"
+}
+variable "resource_group_name" {
+  type        = string
+  description = "Resource Group name to where resources are going to be deployed"
+  default     = "tp2-1"
+}variable "resource_group_name" {
+  type        = string
+  description = "Resource Group name to where resources are going to be deployed"
+  default     = "tp2-2"
 }
 variable "container_group_name" {
   type        = string
@@ -37,6 +56,14 @@ variable "container_group_dns" {
   default     = "repostp2"
 }
 resource "azurerm_resource_group" "demo" {
+  name     = var.resource_group_name
+  location = var.location
+}
+resource "azurerm_resource_group" "demo1" {
+  name     = var.resource_group_name
+  location = var.location
+}
+resource "azurerm_resource_group" "demo2" {
   name     = var.resource_group_name
   location = var.location
 }
