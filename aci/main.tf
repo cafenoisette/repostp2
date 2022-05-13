@@ -40,7 +40,8 @@ variable "resource_group_name" {
   type        = string
   description = "Resource Group name to where resources are going to be deployed"
   default     = "tp2-1"
-}variable "resource_group_name" {
+}
+variable "resource_group_name" {
   type        = string
   description = "Resource Group name to where resources are going to be deployed"
   default     = "tp2-2"
