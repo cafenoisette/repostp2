@@ -6,12 +6,12 @@ terraform {
   }
 }
 terraform {
-backend "azurerm" {
-resource_group_name = "terraformsc" # la valeur definit dans rgname
-storage_account_name = "tfstate4444" # la valeur definit dans strname
-container_name = "tfstate"
-key = "terraform.tfstate"
-}
+  backend "azurerm" {
+    resource_group_name  = "terraformsc" # la valeur definit dans rgname
+    storage_account_name = "tfstate4444" # la valeur definit dans strname
+    container_name       = "tfstate"
+    key                  = "terraform.tfstate"
+  }
 }
 provider "azurerm" {
   features {}
