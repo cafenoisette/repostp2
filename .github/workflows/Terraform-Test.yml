@@ -6,7 +6,7 @@ on:
     branches:
     - test
   pull_request:
- 
+
 #name: terrascan
 #on: [workflow_dispatch]
 jobs:
@@ -24,8 +24,8 @@ jobs:
         iac_version: 'v14'
         policy_type: 'azure'
         only_warn: false
-        sarif_upload: false
-job:
+        sarif_upload: false 
+jobs:
   terraform:
     name: 'Terraform'
     env:
