@@ -69,5 +69,5 @@ jobs:
         iac_type: 'terraform'
         iac_version: 'v14'
         policy_type: 'azure'
-        only_warn: true
-        sarif_upload: true
+        only_warn: false
+        sarif_upload: false
