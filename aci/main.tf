@@ -60,11 +60,11 @@ resource "azurerm_resource_group" "demo" {
   name     = var.resource_group_name
   location = var.location
 }
-resource "azurerm_resource_group" "rg1" {
+resource "azurerm_resource_group" "demo1" {
   name     = var.resource_group_name
   location = var.location
 }
-resource "azurerm_resource_group" "rg2" {
+resource "azurerm_resource_group" "demo2" {
   name     = var.resource_group_name
   location = var.location
 }
