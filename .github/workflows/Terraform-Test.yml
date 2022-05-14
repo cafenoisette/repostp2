@@ -32,7 +32,8 @@ jobs:
       run:
         shell: bash
      steps:
-      - name: Checkout
+     
+    - name: Checkout
       uses: actions/checkout@v2
  
     - name: 'Terraform Format'
