@@ -29,7 +29,7 @@ variable "location1" {
 variable "location2" {
   type        = string
   description = "Location of Azure resources"
-  default     = "westuk"
+  default     = "canadacentral"
 }
 variable "resource_group_name" {
   type        = string
