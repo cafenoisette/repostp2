@@ -24,12 +24,12 @@ variable "location" {
 variable "location1" {
   type        = string
   description = "Location of Azure resources"
-  default     = "canadaeast"
+  default     = "westus"
 }
 variable "location2" {
   type        = string
   description = "Location of Azure resources"
-  default     = "canadaeast"
+  default     = "westuk"
 }
 variable "resource_group_name" {
   type        = string
@@ -60,11 +60,11 @@ resource "azurerm_resource_group" "demo" {
   name     = var.resource_group_name
   location = var.location
 }
-resource "azurerm_resource_group" "demo1" {
+resource "azurerm_resource_group" "rg1" {
   name     = var.resource_group_name
   location = var.location
 }
-resource "azurerm_resource_group" "demo2" {
+resource "azurerm_resource_group" "rg2" {
   name     = var.resource_group_name
   location = var.location
 }
