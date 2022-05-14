@@ -39,12 +39,12 @@ variable "resource_group_name" {
 variable "resource_group_name1" {
   type        = string
   description = "Resource Group name to where resources are going to be deployed"
-  default     = "tp2-5"
+  default     = "tp2-3"
 }
 variable "resource_group_name2" {
   type        = string
   description = "Resource Group name to where resources are going to be deployed"
-  default     = "tp2-6"
+  default     = "tp2-4"
 }
 variable "container_group_name" {
   type        = string
@@ -60,11 +60,11 @@ resource "azurerm_resource_group" "demo" {
   name     = var.resource_group_name
   location = var.location
 }
-resource "azurerm_resource_group" "demo3 {
+resource "azurerm_resource_group" "demo1" {
   name     = var.resource_group_name
   location = var.location
 }
-resource "azurerm_resource_group" "demo4" {
+resource "azurerm_resource_group" "demo2" {
   name     = var.resource_group_name
   location = var.location
 }
