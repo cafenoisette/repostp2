@@ -10,7 +10,7 @@ on:
 #name: terrascan
 #on: [workflow_dispatch]
 jobs:
-  terrascan_job:
+  terrascan_jobs:
     runs-on: ubuntu-latest
     name: terrascan-action
     steps:
